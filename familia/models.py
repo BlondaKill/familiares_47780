@@ -8,3 +8,7 @@ class Familiar(models.Model):
     fecha_nacimiento = models.DateField(null=True, blank=True)
     dni = models.IntegerField(null=True, blank=True)
 
+    def __str__(self):
+        return f"{self.apellido}, {self.nombre}, {self.parentezco_conmigo}  "
+    
+
